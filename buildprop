@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+declare -A ASSETS
+
+ASSETS[js]='resources/js/'
+ASSETS[css]='resources/css/;resources/fonts/'
+
+OUTPUT_STAMP='./assets.cfg'
+
+debug_buildprop() {
+    echo -ne "${ASSETS[*]}\n"
+}
